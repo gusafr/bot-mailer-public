@@ -10,11 +10,10 @@ Clone este repositório para o seu computador.
 Instale as bibliotecas necessárias usando o pip. Execute o seguinte comando no terminal:
 
 bash
-Copy code
 pip install configparser
 Crie um arquivo config.ini na raiz do projeto com as configurações do servidor SMTP e do e-mail. O arquivo deve ter a seguinte estrutura:
+
 ini
-Copy code
 [SMTP]
 server = smtpout.secureserver.net
 port = 465
@@ -31,15 +30,14 @@ Crie o arquivo HTML de template em templates/template.html. Este arquivo deve se
 Crie um arquivo CSV de entrada em input/input.csv. Este arquivo deve ter dois campos: endereço de e-mail e primeiro nome. Aqui está um exemplo de como o arquivo deve ser:
 
 csv
-Copy code
 joao@example.com,João
 maria@example.com,Maria
 carlos@example.com,Carlos
+
 Execução
 Execute o script Python no terminal com o seguinte comando:
 
 bash
-Copy code
 python email_sender.py
 O script irá enviar um e-mail para cada linha do arquivo CSV. Ele criará um arquivo de log em logs/ com informações sobre cada e-mail enviado. Também criará listas de e-mails enviados com sucesso e de erros em output/.
 
